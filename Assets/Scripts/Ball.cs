@@ -7,8 +7,9 @@ public class Ball : MonoBehaviour
     public float RotateSpeed=100f;
     public float jump=8f;
     bool IsFalling = true;
-    
-    
+
+    public AudioClip ballHit;
+
     Rigidbody rb;
     // Start is called before the first frame update
     void Start()
@@ -36,7 +37,10 @@ public class Ball : MonoBehaviour
     {
         if(collision.gameObject.CompareTag("Ground"))
         {
-            IsFalling=true;
+            AudioSource audio = GetComponent<AudioSource>();
+            audio.clip = ballHit;
+            audio.Play();
+            IsFalling =true;
         }
 
     }

@@ -4,22 +4,18 @@ using UnityEngine;
 
 public class CoinCollect : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    public Transform coineffect;
+    Transform effect;
+    int CoinValue = 1;
 
     private void OnTriggerEnter(Collider other)
     {
+        
         if (other.tag=="Player")
         {
+            GameScore.CurrentScore += CoinValue;
+            effect = Instantiate(coineffect, transform.position, transform.rotation);
+            Destroy(effect.gameObject, 2);
             Destroy(gameObject);
         }
     }
