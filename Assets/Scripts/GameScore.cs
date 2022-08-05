@@ -9,11 +9,20 @@ public class GameScore : MonoBehaviour
     float OffsetY = 40;
     float sizeX = 100;
     float sizeY = 22;
+    public AudioClip gameMusic;
 
-
-    private void Start()
+    void Start()
     {
+        AudioSource audio = GetComponent<AudioSource>();
+        audio.clip = gameMusic;
+        audio.Play();
+        DontDestroyOnLoad(audio);
         CurrentScore = 0; 
+    }
+    private void Update()
+    {
+        ///sdasdas
+       
     }
     private void OnGUI()
     {
