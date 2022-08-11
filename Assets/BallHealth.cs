@@ -10,12 +10,8 @@ public class BallHealth : MonoBehaviour
     private bool isRestart = false;
     
     public AudioClip gameOver;
+    
 
-    private void Start()
-    {
-        
-    }
-    // Update is called once per frame
     void Update()
     {
         if (transform.position.y<MaxFalldistance)

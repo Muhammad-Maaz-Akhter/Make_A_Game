@@ -61,6 +61,8 @@
     <Compile Include="Assets\Scripts\CoinCollect.cs" />
     <Compile Include="Assets\Scripts\Ball.cs" />
     <Compile Include="Assets\BallHealth.cs" />
+    <Compile Include="Assets\MainMenu.cs" />
+    <Compile Include="Assets\function.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
