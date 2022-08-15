@@ -8,15 +8,7 @@ public class Camera : MonoBehaviour
     float lift = 1.5f;
     float distance = -10f;
 
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
+    void LateUpdate()
     {
         transform.position = target.position + new Vector3(0f, lift, distance);
         transform.LookAt(target);

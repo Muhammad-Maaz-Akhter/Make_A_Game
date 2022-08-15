@@ -5,8 +5,7 @@ using UnityEngine;
 public class CheckPoint : MonoBehaviour
 {
     public static Vector3 ReachedPoint;
-    //public Vector3 StartPoint;
-
+    
     
     private void OnTriggerEnter(Collider other)
     {
@@ -17,7 +16,7 @@ public class CheckPoint : MonoBehaviour
                 ReachedPoint = transform.position;
             }
         }
-        //ReachedPoint = StartPoint;
+        
     }
 
 

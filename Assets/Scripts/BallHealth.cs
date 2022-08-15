@@ -10,7 +10,7 @@ public class BallHealth : MonoBehaviour
     private bool isRestart = false;
     
     public AudioClip gameOver;
-    
+   
 
     void Update()
     {
@@ -31,13 +31,14 @@ public class BallHealth : MonoBehaviour
         isRestart = false;
     }
 
-    void RestartLevel1()
+    public void RestartLevel1()
     {
+        
         AudioSource audio = GetComponent<AudioSource>();
         isRestart = true;
         audio.clip = gameOver;
         audio.Play();
-        StartCoroutine("Test", audio.clip.length);
+        StartCoroutine("Test", 2f);
         
     }
    

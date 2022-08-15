@@ -64,8 +64,9 @@
     <Compile Include="Assets\Scripts\Ball.cs" />
     <Compile Include="Assets\Scripts\BallHealth.cs" />
     <Compile Include="Assets\Scripts\CheckPoint.cs" />
-    <Compile Include="Assets\Enemy.cs" />
-    <Compile Include="Assets\DieOnHit.cs" />
+    <Compile Include="Assets\Scripts\DieOnHit.cs" />
+    <Compile Include="Assets\Scripts\Enemy.cs" />
+    <Compile Include="Assets\Scripts\KillOnTouch.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

@@ -6,7 +6,7 @@ public class Ball : MonoBehaviour
 {
     public float RotateSpeed=100f;
     public float jump=8f;
-    bool IsFalling = true;
+    bool IsFalling = false;
 
     public AudioClip ballHit;
 
@@ -42,7 +42,7 @@ public class Ball : MonoBehaviour
             audio.Play();
             IsFalling =true;
         }
-
+       
     }
 
 
